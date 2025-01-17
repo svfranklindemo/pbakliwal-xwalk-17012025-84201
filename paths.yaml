@@ -1,4 +1,4 @@
 mappings:
- - /content/xsc-xwalk-site/:/
- - /content/xsc-xwalk-site/metadata.json:/metadata.json
- - /content/xsc-xwalk-site/redirects.json:/redirects.json
+ - /content/pbakliwal/glock-eds-crosswalk/:/
+ - /content/pbakliwal/glock-eds-crosswalk/metadata.json:/metadata.json
+ - /content/pbakliwal/glock-eds-crosswalk/redirects.json:/redirects.json
