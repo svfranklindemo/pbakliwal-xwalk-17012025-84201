@@ -386,3 +386,14 @@ main .section[data-section-status='initialized'] {
 .section.tabs-container{
   display: none;
 }
+
+.section.glock-section-a.teaser-container{
+  display: flex;
+
+
+@media (min-width: 900px) {
+  .section > div {
+    max-width: unset;
+  }
+}
+}

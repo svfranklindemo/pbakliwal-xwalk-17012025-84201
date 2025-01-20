@@ -7,7 +7,6 @@ main .carousel {
   scroll-snap-type: x mandatory;
   overflow: scroll hidden;
   scroll-behavior: smooth;
-  max-width: 1680px;
   margin: auto;
 }
 
