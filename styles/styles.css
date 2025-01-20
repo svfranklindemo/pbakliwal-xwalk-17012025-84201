@@ -436,6 +436,13 @@ main .section[data-section-status='initialized'] {
 
 .section.glock-section-b.teaser-container{
 
+  .teaser{
+    display: block;
+  }
+
+  .teaser > div:first-child > div {
+    height: 190px;
+  }
   display: flex;
   flex-wrap: wrap; /* Allows wrapping to the next line if needed */
   gap: 20px; /* Adjust the gap between the elements as needed */
