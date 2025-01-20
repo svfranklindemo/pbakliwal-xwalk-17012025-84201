@@ -450,5 +450,15 @@ main .section[data-section-status='initialized'] {
 .teaser-wrapper {
   flex: 1 1 calc(25% - 20px); /* Adjusts the width of each element */
   box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin-top: 0;
 }
+}
+
+.section.full-width-image{
+  padding: 0;
+  .default-content-wrapper{
+    max-width: unset;
+    margin: 0;
+  }
+
 }
