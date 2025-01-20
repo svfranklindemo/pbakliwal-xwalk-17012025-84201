@@ -380,3 +380,9 @@ main .section[data-section-status='initialized'] {
 .hlx-preview-overlay .hlx-badge .hlx-popup * {
   font-size: 14px;
 }
+
+/*glock styles*/
+
+.section.tabs-container{
+  display: none;
+}
