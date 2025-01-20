@@ -424,3 +424,11 @@ main .section[data-section-status='initialized'] {
     font-size: 1.125rem;
   }
 }
+
+.image-heading-section{
+  display: flex;
+  justify-content: center;
+  img{
+    height: 1.875rem;
+  }
+}
