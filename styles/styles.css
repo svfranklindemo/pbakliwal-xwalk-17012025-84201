@@ -397,4 +397,30 @@ main .section[data-section-status='initialized'] {
     flex: 1 1 calc(50% - 20px); /* Adjusts the width of each element */
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
   }
+
+  .teaser > div:last-child {
+    background-color: transparent;
+  }
+
+  p{
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: normal;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+  }
+
+  h2{
+    color: #fff;
+    line-height: normal;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  a{
+    font-size: 1.125rem;
+  }
 }
