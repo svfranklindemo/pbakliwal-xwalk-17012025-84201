@@ -459,6 +459,9 @@ main .section[data-section-status='initialized'] {
   .default-content-wrapper{
     max-width: unset;
     margin: 0;
+    img{
+      width: 100%;
+    }
   }
 
 }
