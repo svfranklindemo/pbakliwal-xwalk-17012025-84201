@@ -1,14 +1,14 @@
 // put your AEM publish address here
 // this fixes having to manually change the AEM host here
-const AEM_HOST = checkDomain()
+const AEM_HOST = "https://publish-p121371-e1189853.adobeaemcloud.com/" 
 
-function checkDomain(){
+/*function checkDomain(){
   if (window.location.hostname.includes("hlx.page") || window.location.hostname.includes("localhost")){
-    return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
+    return    
   }else{
     return window.location.origin 
   }
-}
+}*/
 
 export default function decorate(block) {
 
