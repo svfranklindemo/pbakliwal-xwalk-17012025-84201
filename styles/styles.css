@@ -485,3 +485,6 @@ main .section[data-section-status='initialized'] {
   }
 
 }
+.content-container{
+  display: flex;
+}

@@ -33,10 +33,10 @@ const adventureTitle = response.data.adventureList.items[0].title;
 document.getElementById(adventureDiv.id).innerHTML = "<div class='dimesion-section'><h3>"+ adventureTitle + "</h3>";
 
 const adventureDesc = response.data.adventureList.items[0].description.plaintext;
-document.getElementById(adventureDiv.id).innerHTML += "<div>" + adventureDesc + "</div>";
+document.getElementById(adventureDiv.id).innerHTML += "<div class='content-container'><div class='content-div>'" + adventureDesc + "</div>";
 
 const backgroundImage = response.data.adventureList.items[0].primaryImage._path;
-document.getElementById(adventureDiv.id).innerHTML += "<div><img src=" + AEM_HOST + backgroundImage + "></div>";  
+document.getElementById(adventureDiv.id).innerHTML += "<div class='image-div'><img src=" + AEM_HOST + backgroundImage + "></div></div>";  
 
 const tripItinerary= response.data.adventureList.items[0].itinerary.html;
 document.getElementById(adventureDiv.id).innerHTML += "<div>" + "Itinerary: </br>" + tripItinerary + "</div></div>";
