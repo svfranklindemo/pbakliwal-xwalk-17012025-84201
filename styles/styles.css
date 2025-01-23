@@ -454,6 +454,12 @@ main .section[data-section-status='initialized'] {
 }
 }
 
+.section.glock-section-b.large.teaser-container{
+  .teaser > div:first-child > div {
+    height: 390px;
+  }
+}
+
 .section.full-width-image{
   padding: 0;
   .default-content-wrapper{
