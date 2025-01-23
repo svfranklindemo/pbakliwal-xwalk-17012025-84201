@@ -11,7 +11,7 @@ export default async function decorate(block) {
   const navPath = footerMeta ? new URL(footerMeta, window.location).pathname : (window.wknd.demoConfig.demoBase || '/footer');
   const footerPath = footerMeta ? new URL(footerMeta).pathname : '/footer';
 
-  let footerURL = `${getSiteRoot(6)}${navPath}.plain.html`;
+  let footerURL = `${getSiteRootNew()}${navPath}.plain.html`;
   let updatedFooterUrl = footerURL.replace(/about-us\/|faqs\/|index-demo\/|magazine\/.+\/|adventures\/.+\//g, "/");
 
   const resp = await fetch(updatedFooterUrl.replace("//", "/"), window.location.pathname.endsWith('/footer') ? { cache: 'reload' } : {});
@@ -32,5 +32,9 @@ export default async function decorate(block) {
       f = f.nextElementSibling;
     }
     block.append(footer);
+  }
+
+  function getSiteRootNew(){
+    return "/us/en";
   }
 }

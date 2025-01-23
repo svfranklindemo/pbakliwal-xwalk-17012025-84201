@@ -454,10 +454,24 @@ main .section[data-section-status='initialized'] {
 }
 }
 
-.section.glock-section-b.large.teaser-container{
+.section.glock-section-c.teaser-container{
+
+  .teaser{
+    display: block;
+  }
+
   .teaser > div:first-child > div {
     height: 390px;
   }
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+  gap: 20px; /* Adjust the gap between the elements as needed */
+
+.teaser-wrapper {
+  flex: 1 1 calc(25% - 20px); /* Adjusts the width of each element */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin-top: 0;
+}
 }
 
 .section.full-width-image{

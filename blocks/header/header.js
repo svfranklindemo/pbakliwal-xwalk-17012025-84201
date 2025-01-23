@@ -21,7 +21,7 @@ export default async function decorate(block) {
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : (window.wknd.demoConfig.demoBase || '/nav');
 
-  let navURL = `${getSiteRoot(6)}${navPath}.plain.html`;
+  let navURL = `${getSiteRootNew()}${navPath}.plain.html`;
   let updatedNavUrl = navURL.replace(/about-us\/|faqs\/|magazine\/.+\/|adventures\/.+\//g, "/");
 
   const resp = await fetch(updatedNavUrl.replace("//", "/"), window.location.pathname.endsWith('/nav') ? { cache: 'reload' } : {});
@@ -69,4 +69,8 @@ export default async function decorate(block) {
     decorateIcons(block);
     block.append(nav);
   }
+}
+
+function getSiteRootNew(){
+  return "/us/en";
 }
